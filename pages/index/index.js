@@ -1,4 +1,5 @@
 // pages/index/index.js
+//test git git
 Page({
 
   /**
