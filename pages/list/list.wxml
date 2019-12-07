@@ -1,0 +1,104 @@
+<!--pages/list/list.wxml-->
+<include src="/includes/search-bar.wxml" />
+<view class="cells">
+  <navigator class="item" wx:for="{{shops}}" wx:key="id" url="/pages/detail/detail?item={{item.id}}">
+    <image src="{{item.images[0]}}"> </image>
+    <view class="meta">
+      <text class="name">名称：{{item.name}}</text>
+      <text class="phone"> 电话： {{item.phone}}</text>
+      <text class="address">地址： {{item.address}}</text>
+      <text class="hours"> 营业时间：{{item.businessHours}}</text>
+    </view>
+    <view class="score">{{item.score}} </view>
+
+
+
+
+
+    <!-- </view> -->
+
+    <!-- <view class="item">
+    <image src="/assets/images/banner-02.png" > </image>
+    <view class="meta">
+      <text class="name">名称：振华大饭店</text>
+      <text class="phone"> 电话： 28603651334</text>
+      <text class="address">地址： 哈尔滨南岗区XX小区</text>
+      <text class="hours"> 营业时间： 9：00－21：00</text>
+
+    </view>
+    <view class="score">100 </view>
+  </view>
+    <view class="item">
+    <image src="/assets/images/banner-02.png" > </image>
+    <view class="meta">
+      <text class="name">名称：振华大饭店</text>
+      <text class="phone"> 电话： 28603651334</text>
+      <text class="address">地址： 哈尔滨南岗区XX小区</text>
+      <text class="hours"> 营业时间： 9：00－21：00</text>
+
+    </view>
+    <view class="score">100 </view>
+  </view>
+    <view class="item">
+    <image src="/assets/images/banner-02.png" > </image>
+    <view class="meta">
+      <text class="name">名称：振华大饭店</text>
+      <text class="phone"> 电话： 28603651334</text>
+      <text class="address">地址： 哈尔滨南岗区XX小区</text>
+      <text class="hours"> 营业时间： 9：00－21：00</text>
+
+    </view>
+    <view class="score">100 </view>
+  </view>
+    <view class="item">
+    <image src="/assets/images/banner-02.png" > </image>
+    <view class="meta">
+      <text class="name">名称：振华大饭店</text>
+      <text class="phone"> 电话： 28603651334</text>
+      <text class="address">地址： 哈尔滨南岗区XX小区</text>
+      <text class="hours"> 营业时间： 9：00－21：00</text>
+
+    </view>
+    <view class="score">100 </view>
+  </view>
+    <view class="item">
+    <image src="/assets/images/banner-02.png" > </image>
+    <view class="meta">
+      <text class="name">名称：振华大饭店</text>
+      <text class="phone"> 电话： 28603651334</text>
+      <text class="address">地址： 哈尔滨南岗区XX小区</text>
+      <text class="hours"> 营业时间： 9：00－21：00</text>
+
+    </view>
+    <view class="score">100 </view>
+  </view>
+
+    <view class="item">
+    <image src="/assets/images/banner-02.png" > </image>
+    <view class="meta">
+      <text class="name">名称：振华大饭店</text>
+      <text class="phone"> 电话： 28603651334</text>
+      <text class="address">地址： 哈尔滨南岗区XX小区</text>
+      <text class="hours"> 营业时间： 9：00－21：00</text>
+
+    </view>
+    <view class="score">100 </view>
+  </view>
+    <view class="item">
+    <image src="/assets/images/banner-02.png" > </image>
+    <view class="meta">
+      <text class="name">名称：振华大饭店</text>
+      <text class="phone"> 电话： 28603651334</text>
+      <text class="address">地址： 哈尔滨南岗区XX小区</text>
+      <text class="hours"> 营业时间： 9：00－21：00</text>
+
+    </view>
+    <view class="score">100 </view>-->
+  </navigator>
+  <view wx:if="{{hasMore}}" class="loadmore loading">
+    <text>正在加载...</text>
+  </view>
+  <view wx:else class="loadmore">
+    <text>没有更多了</text>
+  </view>
+</view>
